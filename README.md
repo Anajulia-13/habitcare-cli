@@ -50,7 +50,7 @@ pytest
 ```
 
 ```md id="p3x7m9"
-##  Executar Testes
+
 
 ```bash
 pytest
@@ -61,7 +61,7 @@ ruff check .
 ```
 
 ```md id="r6v1k4"
-##  Executar Lint
+
 
 ```bash
 ruff check .
