@@ -19,7 +19,7 @@ O sistema permite:
 - Pytest
 - Ruff
 - GitHub Actions
-- 
+- Requests
 ##  Nova Funcionalidade
 
 O HabitCare CLI agora possui integração com API pública
