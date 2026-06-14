@@ -2,6 +2,12 @@
 
 Aplicação em linha de comando para controle de hábitos diários, auxiliando na organização e manutenção de rotinas saudáveis.
 
+## Integrantes
+- Ana Júlia Cardoso dos Santos 
+- Geovana Cristina Ferreira Moraes 
+- Victor Otaviano Alves Brito
+- Maria Morena da Silva Couto
+- Jean de Almeida Brito
 
 ## Solução
 O sistema permite:
@@ -20,6 +26,7 @@ O sistema permite:
 - Ruff
 - GitHub Actions
 - Requests
+- Supabase
 ##  Nova Funcionalidade
 
 O HabitCare CLI agora possui integração com API pública
