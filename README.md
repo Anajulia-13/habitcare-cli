@@ -19,6 +19,21 @@ O sistema permite:
 - Pytest
 - Ruff
 - GitHub Actions
+- Requests
+##  Nova Funcionalidade
+
+O HabitCare CLI agora possui integração com API pública
+de frases motivacionais utilizando a ZenQuotes API.
+
+O usuário pode visualizar frases motivacionais diretamente
+no terminal através da opção 5 do menu.
+
+## Como Executar
+
+```bash
+pip install -r requirements.txt
+python src/main.py
+````
 
 ## Instalação
 ```bash
@@ -33,12 +48,27 @@ python src/main.py
 ```bash
 pytest
 ```
+
+```md id="p3x7m9"
+
+
+```bash
+pytest
+```
 ## Lint
 ```bash
 ruff check .
 ```
+
+```md id="r6v1k4"
+
+
+```bash
+ruff check .
+```
+
 ## Versão
-1.0.0
+2.0.0
 
 ## Autor
 Ana Júlia Cardoso dos Santos

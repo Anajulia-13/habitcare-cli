@@ -1,4 +1,5 @@
-from src.habits import add_habit, list_habits, complete_habit
+from habits import add_habit, list_habits, complete_habit
+from motivation import get_motivational_quote
 
 
 def menu():
@@ -7,6 +8,7 @@ def menu():
     print("2. Listar hábitos")
     print("3. Concluir hábito")
     print("4. Sair")
+    print("5. Ver frase motivacional")
 
 
 while True:
@@ -20,6 +22,7 @@ while True:
 
     elif op == "2":
         habits = list_habits()
+
         if not habits:
             print("Nenhum hábito cadastrado.")
         else:
@@ -31,6 +34,10 @@ while True:
         index = int(input("Número do hábito: "))
         complete_habit(index)
         print("Hábito concluído!")
+
+    elif op == "5":
+        print("\n✨ Frase Motivacional:")
+        print(get_motivational_quote())
 
     elif op == "4":
         print("Encerrando...")
