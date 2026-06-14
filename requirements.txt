@@ -1,0 +1,5 @@
+requests
+pytest
+ruff
+supabase
+python-dotenv
