@@ -1,80 +1,146 @@
 # HabitCare CLI
 
-Aplicação em linha de comando para controle de hábitos diários, auxiliando na organização e manutenção de rotinas saudáveis.
+Aplicação em linha de comando desenvolvida em Python para auxiliar usuários no gerenciamento de hábitos diários, promovendo organização, disciplina e acompanhamento de metas pessoais.
+
+---
 
 ## Integrantes
-- Ana Júlia Cardoso dos Santos 
 
+- Ana Júlia Cardoso dos Santos
+- Maria Morena da Silva Couto
+- Victor Otaviano Alves Brito
+- Jean de Almeida Brito
+- Geovana Cristina Ferreira Moraes
 
-## Solução
-O sistema permite:
-- adicionar hábitos
-- listar hábitos
-- concluir hábitos
+---
 
-## Público-alvo
-- estudantes
-- idosos
-- pessoas com rotina intensa
+## Objetivo
 
-## Tecnologias
+O HabitCare CLI permite que os usuários registrem e acompanhem hábitos diários de forma simples através do terminal.
+
+---
+
+## Funcionalidades
+
+- Adicionar hábitos
+- Listar hábitos
+- Concluir hábitos
+- Exibir frases motivacionais através da API ZenQuotes
+- Persistência de dados utilizando Supabase
+
+---
+
+## Público-Alvo
+
+- Estudantes
+- Idosos
+- Pessoas com rotina intensa
+- Usuários que desejam criar hábitos saudáveis
+
+---
+
+## Tecnologias Utilizadas
+
 - Python
 - Pytest
 - Ruff
 - GitHub Actions
 - Requests
 - Supabase
-##  Nova Funcionalidade
+- PostgreSQL
 
-O HabitCare CLI agora possui integração com API pública
-de frases motivacionais utilizando a ZenQuotes API.
+---
 
-O usuário pode visualizar frases motivacionais diretamente
-no terminal através da opção 5 do menu.
+## Banco de Dados
 
-## Como Executar
+O projeto utiliza o Supabase como solução de banco de dados em nuvem para armazenamento dos hábitos cadastrados pelos usuários.
 
-```bash
-pip install -r requirements.txt
-python src/main.py
-````
+---
+
+## Configuração do Ambiente
+
+Crie um arquivo `.env` na raiz do projeto contendo:
+
+```env
+SUPABASE_URL=sua_url_do_supabase
+SUPABASE_KEY=sua_chave_do_supabase
+```
+
+> O arquivo `.env` não deve ser enviado ao GitHub.
+
+---
 
 ## Instalação
+
+Instale as dependências do projeto:
+
 ```bash
 pip install -r requirements.txt
 ```
 
+---
+
 ## Execução
+
+Execute a aplicação:
+
 ```bash
 python src/main.py
 ```
+
+---
+
 ## Testes
-```bash
-pytest
-```
 
-```md id="p3x7m9"
-
+Executar os testes automatizados:
 
 ```bash
 pytest
 ```
-## Lint
-```bash
-ruff check .
-```
 
-```md id="r6v1k4"
+---
 
+## Análise Estática de Código
+
+Executar verificação com Ruff:
 
 ```bash
 ruff check .
 ```
 
-## Versão
-2.0.0
+---
 
+## Integração Contínua
 
+O projeto utiliza GitHub Actions para execução automática dos testes e verificações de qualidade a cada Pull Request realizado.
 
-## Autor
-Ana Júlia Cardoso dos Santos
+---
+
+## Versionamento
+
+Versão atual:
+
+```text
+3.0.0
+```
+
+---
+
+## Evolução do Projeto
+
+O HabitCare CLI evoluiu de uma aplicação simples em linha de comando para um projeto que utiliza práticas reais de Engenharia de Software, incluindo:
+
+- Controle de versão com Git e GitHub
+- Trabalho colaborativo com Branches e Pull Requests
+- Integração Contínua (CI)
+- Consumo de APIs REST
+- Testes Automatizados
+- Banco de Dados em Nuvem (Supabase)
+- Versionamento Semântico
+- Revisão de Código (Code Review)
+
+---
+
+## Repositório
+
+https://github.com/Anajulia-13/habitcare-cli
