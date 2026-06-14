@@ -4,10 +4,7 @@ Aplicação em linha de comando para controle de hábitos diários, auxiliando n
 
 ## Integrantes
 - Ana Júlia Cardoso dos Santos 
-- Geovana Cristina Ferreira Moraes 
-- Victor Otaviano Alves Brito
-- Maria Morena da Silva Couto
-- Jean de Almeida Brito
+
 
 ## Solução
 O sistema permite:
@@ -77,14 +74,7 @@ ruff check .
 ## Versão
 2.0.0
 
-## Configuração do Ambiente
 
-Crie um arquivo `.env` na raiz do projeto:
-
-```env
-SUPABASE_URL=sua_url_do_supabase
-SUPABASE_KEY=sua_chave_do_supabase
-```
 
 ## Autor
 Ana Júlia Cardoso dos Santos
