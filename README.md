@@ -141,6 +141,12 @@ O HabitCare CLI evoluiu de uma aplicação simples em linha de comando para um p
 
 ---
 
+## Deploy
+
+Aplicação publicada em:
+
+https://habitcare-cli.onrender.com/
+
 ## Repositório
 
 https://github.com/Anajulia-13/habitcare-cli
