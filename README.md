@@ -77,5 +77,14 @@ ruff check .
 ## Versão
 2.0.0
 
+## Configuração do Ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+SUPABASE_URL=sua_url_do_supabase
+SUPABASE_KEY=sua_chave_do_supabase
+```
+
 ## Autor
 Ana Júlia Cardoso dos Santos
