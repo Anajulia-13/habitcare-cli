@@ -1,44 +1,35 @@
-import json
+from src.database import supabase
 from datetime import date
 
 FILE = "data.json"
 
 
-def load_data():
-    try:
-        with open(FILE, "r") as f:
-            return json.load(f)
-    except FileNotFoundError:
-        return []
 
-
-def save_data(data):
-    with open(FILE, "w") as f:
-        json.dump(data, f, indent=2)
 
 
 def add_habit(name):
     if not name:
         raise ValueError("Nome inválido")
 
-    data = load_data()
-    habit = {
-        "name": name,
-        "date": str(date.today()),
-        "done": False
-    }
-    data.append(habit)
-    save_data(data)
+    supabase.table("habitos").insert({
+        "nome": name,
+        "descricao": str(date.today()),
+        "concluido": False
+    }).execute()
 
 
 def list_habits():
-    return load_data()
-
+    resultado = supabase.table("habitos").select("*").execute()
+    return resultado.data
 
 def complete_habit(index):
-    data = load_data()
-    if index < 0 or index >= len(data):
+    habitos = supabase.table("habitos").select("*").execute().data
+
+    if index < 0 or index >= len(habitos):
         raise IndexError("Índice inválido")
 
-    data[index]["done"] = True
-    save_data(data)
+    habit_id = habitos[index]["id"]
+
+    supabase.table("habitos").update({
+        "concluido": True
+    }).eq("id", habit_id).execute()
